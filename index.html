@@ -23,14 +23,14 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="#">HOME</a>
-              <a class="nav-link" href="#">ABOUT US</a>
+              <a class="nav-link" href="#about">ABOUT US</a>
               <a class="nav-link" href="#">SERVICES</a>
               <a class="nav-link" href="#">OUR PROJECTS</a>
               <a class="nav-link" href="#">OUR TEAM</a>
               <a class="nav-link" href="#">HAPPY CLIENTS</a>
-              <a class="nav-link" href="#">PRICE</a>
+              <a class="nav-link" href="#price">PRICE</a>
               <a class="nav-link" href="#">SOME FACTS</a>
-              <a class="nav-link" href="#">CONTACT US</a>
+              <a class="nav-link" href="#contact">CONTACT US</a>
             </div>
           </div>
         </div>
@@ -39,9 +39,40 @@
       <section class="home" class="align-middle">
         <h1>Design is about <br> <span>communication</span></h1>
         <h3>call us: +00 0 1234 5678 </h3>
-        <a href="#contact"><button type="button" class="home__btn">GET IN TOUCH!</button></a>
+        <button type="button" class="home__btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          GET IN TOUCH!</button>
       </section>
-      <section class="about">
+      <section class="reg__form">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Your Name">
+                  <label for="floatingInput">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="tel" class="form-control" id="floatingInput" placeholder="+00 0 1234 5678">
+                  <label for="floatingInput">Phone Number</label>
+                </div>
+                <button type="button" class="btn btn-secondary home__btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#messageModal">CALL ME BACK!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-message">
+              <span>DONE</span><br>
+              <p>We will soon get back to you.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <button type="button" class="btn btn-primary phone__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <img src="../bootstrap/src/Telephone.png" alt="phone">
+        </button>
         <div class="container">
         <h2>ABOUT US</h2>
         <h3>who we are?</h3>
@@ -56,7 +87,7 @@
                 orci leo facilisis purus. Nam porta erat id sapien consectetur. 
                 Fusce sed purus eros. Vivamus rhoncus, ipsum in tempus fermentum,
                 orci leo facilisis purus. </p>
-                <button type="button" class="home__btn about__btn"> LEARN MORE</button>
+                <button type="button" class="home__btn about__btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"> LEARN MORE</button>
             </div>
             <div class="col-5 video">
               <div class="ratio ratio-16x9">
@@ -69,7 +100,7 @@
           </div>
         </div>
       </section>
-      <section class="price">
+      <section class="price" id="price">
         <div class="container">
           <h2>PRICE</h2>
           <h3>PRICING TABLE</h3>
@@ -87,7 +118,7 @@
                 Time tracking<br>
                 — <br>
                 Custom views</p>
-              <button class="price__btn">CHOOSE</button>
+              <button class="price__btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">CHOOSE</button>
             </div>
             <div class="col card">
               <h3>STANDART</h3>
@@ -102,7 +133,7 @@
                 Time tracking<br>
                 — <br>
                 Custom views</p>
-              <button class="price__btn">CHOOSE</button>
+              <button class="price__btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">CHOOSE</button>
             </div>
             <div class="col card">
               <h3>LUXE</h3>
@@ -117,7 +148,7 @@
                 Time tracking<br>
                 — <br>
                 Custom views</p>
-                <button class="price__btn">CHOOSE</button>
+                <button class="price__btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">CHOOSE</button>
             </div>
             <div class="col card">
               <h3>PREMIUM</h3>
@@ -132,7 +163,7 @@
                 Time tracking<br>
                 — <br>
                 Custom views</p>
-                <button class="price__btn">CHOOSE</button>
+                <button class="price__btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">CHOOSE</button>
             </div>
           </div>
         </div>
@@ -164,7 +195,7 @@
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
             <label for="floatingTextarea2">MESSAGE</label>
           </div>
-          <div class="conact__btn"><button class="home__btn">SEND MESSAGE</button></div>
+          <div class="conact__btn"><button class="home__btn btn btn-secondary btn-primary" data-bs-toggle="modal" data-bs-target="#messageModal">SEND MESSAGE</button></div>
         </div>
       </section>
       <footer>

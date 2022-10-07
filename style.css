@@ -30,7 +30,7 @@ h3{
 
 .home{
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     background-image: url(../bootstrap/src/Bg_img_01.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -81,6 +81,69 @@ h3{
     line-height: 1.5;
     text-align: center;
 }
+
+.phone__btn{ 
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(184, 139, 88);
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 1, 0.24);
+    width: 65px;
+    height: 65px;
+    float: right;
+    margin-top: -33px;
+    margin-right: 10%;
+}
+
+button:hover, button:active .btn-primary{
+    background-color: #000000 !important;
+    border-color: #000000;
+}
+
+
+
+.reg__form {
+    font-size: 13px;
+    font-family: "Montserrat";
+    color: rgb(158, 158, 158);
+    text-transform: uppercase;
+    line-height: 1.923;
+    text-align: left;
+}
+
+.modal-content{
+    width: 350px;
+    margin: 0 auto;
+}
+
+.modal-body{
+    vertical-align: middle;
+}
+
+.btn-secondary{
+   margin:30px auto 14px auto;
+}
+
+.modal-body{
+    margin: auto 34px ;
+}
+
+.modal-message {
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: rgb(174, 174, 174);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.8;
+    text-align: center;
+    width: 130%;
+    padding: 10%;
+  }
+
+  .modal-message p{
+    font-size:16px;
+    text-transform:none;
+    font-weight: 500;
+  }
 
 .col{
     padding: 20px;
@@ -230,7 +293,8 @@ footer p{
     background-color: rgb(184, 139, 88);
     box-shadow: 0px 3px 8px 0px rgba(0, 0, 1, 0.24);
     border: none;
-    margin-top: -60px;
+    float: left;
+    margin-top: -33px;
     margin-left: 88px;
     width: 65px;
     height: 65px;
